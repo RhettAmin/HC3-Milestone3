@@ -96,6 +96,10 @@ p {
 	float: right;
 	}
 
+.center {
+	text-align: center;
+	}
+
 .both {
 	clear: both;
 	display: block;
