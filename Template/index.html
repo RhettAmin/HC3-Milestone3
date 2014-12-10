@@ -41,14 +41,20 @@
             <h1 class="logo left"><a href="">Walleee</a></h1><!-- .logo-->
             
             <!-- Nav Menu -->
-            <ul class="nav-menu right">
                 <!--<li class="current"><a href="#home">hel</a></li>-->
                 <!--<li><a href="#services">services</a></li>-->
                 <!--<li><a href="#portfolio">portfolio</a></li>-->
                 <!--<li><a href="#about">about</a></li>-->
                 <!--<li><a href="#contact">contact</a></li>-->
-                <li><a href="">login</a></li>
-            </ul><!-- .nav-menu-->
+
+                <div class="right">
+                <div id="dd" class="wrapper-dropdown-5" tabindex="1">Login
+                    <ul class="dropdown">
+                        <li><a href="#">Username</li>
+                        <li><a href="#">Password </a></li>
+                    </ul>
+                </div>
+                </div>
         
         </div><!-- .inner -->
 	</div><!-- #header -->
@@ -222,7 +228,7 @@
 	<div id="footer">
         <div class="inner">
         
-        	<p class="center">Made with love in TORONTO</p>
+        	<p class="center">Made with <img src="images/footer/heart.png" width="15" height="15" /> in TORONTO</p>
 
             <!--
             <ul>
@@ -240,6 +246,37 @@
 	<!-- End Footer -->
     
     <a href="" class="go-top">Top</a>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script type="text/javascript">
+
+            function DropDown(el) {
+                this.dd = el;
+                this.initEvents();
+            }
+            DropDown.prototype = {
+                initEvents : function() {
+                    var obj = this;
+
+                    obj.dd.on('click', function(event){
+                        $(this).toggleClass('active');
+                        event.stopPropagation();
+                    }); 
+                }
+            }
+
+            $(function() {
+
+                var dd = new DropDown( $('#dd') );
+
+                $(document).click(function() {
+                    // all dropdowns
+                    $('.wrapper-dropdown-5').removeClass('active');
+                });
+
+            });
+
+        </script>
     
 </body>
 </html>
