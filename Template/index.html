@@ -47,14 +47,9 @@
                 <!--<li><a href="#about">about</a></li>-->
                 <!--<li><a href="#contact">contact</a></li>-->
 
-                <div class="right">
-                <div id="dd" class="wrapper-dropdown-5" tabindex="1">Login
-                    <ul class="dropdown">
-                        <li><a href="#">Username</li>
-                        <li><a href="#">Password </a></li>
-                    </ul>
-                </div>
-                </div>
+                <!-- 
+                LOGIN BUTTON
+                -->
         
         </div><!-- .inner -->
 	</div><!-- #header -->
@@ -247,36 +242,6 @@
     
     <a href="" class="go-top">Top</a>
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script type="text/javascript">
-
-            function DropDown(el) {
-                this.dd = el;
-                this.initEvents();
-            }
-            DropDown.prototype = {
-                initEvents : function() {
-                    var obj = this;
-
-                    obj.dd.on('click', function(event){
-                        $(this).toggleClass('active');
-                        event.stopPropagation();
-                    }); 
-                }
-            }
-
-            $(function() {
-
-                var dd = new DropDown( $('#dd') );
-
-                $(document).click(function() {
-                    // all dropdowns
-                    $('.wrapper-dropdown-5').removeClass('active');
-                });
-
-            });
-
-        </script>
     
 </body>
 </html>
