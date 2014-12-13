@@ -9,6 +9,7 @@
 <link href="css/nivo-slider.css" rel="stylesheet" type="text/css" />
 <link href="css/nivotheme.css" rel="stylesheet" type="text/css" />
 <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+<link href="css/searchbar.css" rel="stylesheet" type="text/css" />
 
 
 <!-- Google Fonts -->
@@ -22,6 +23,7 @@
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/toolbox.js"></script>
 <!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
 
 <!--[if IE 9]>
@@ -47,7 +49,7 @@
                 <!--<li><a href="#portfolio">portfolio</a></li>-->
                 <!--<li><a href="#about">about</a></li>-->
                 <!--<li><a href="#contact">contact</a></li>-->
-                <li><a href="/profile.html">Login</a></li>
+                <li><a href="/profile.html">Profile</a></li>
             </ul>
         
         </div><!-- .inner -->
@@ -59,21 +61,41 @@
         ============================= -->
     <div id="search">
         <div class="inner">
-        
+            <div class="container">
+
+                <form action="javascript:void(0);" method="get">
+                    <fieldset>
+                        
+                        <ul class="toolbar clearfix">
+
+                            <li><a href="#" class="fontawesome-heart"></a></li>
+                            <li><a href="#" class="fontawesome-eye-open"></a></li>
+                            <li><a href="#" class="fontawesome-comment"></a></li>
+                            <li><input type="search" id="search" placeholder="What are you looking for?"></li>
+                            <li>
+                                <button type="submit" id="btn-search">
+                                    <span class="fontawesome-search"></span>
+                                </button>
+                            </li>
+
+                        </ul>
+
+                    </fieldset>
+                </form>
+
+            </div>
             
         </div><!-- .inner -->
     </div><!-- #search -->
     <!-- End Search -->
 
 
-	<!-- Portfolio
-		============================= -->
+	<!-- Portfolio ============================= -->
 	<div id="portfolio">
         <div class="inner">
         
         	<h2>Trending Photos</h2>
-            <!-- <h3>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</h3> -->
-            
+
             <!-- Portfolio Menu -->
             <ul class="portfolio-menu filter home-portfolio">
                 
