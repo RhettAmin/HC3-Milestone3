@@ -1,10 +1,10 @@
 //Opening the login box
 $(document).ready(function() {
 	$("a.loginLink").click(function(event){
-		if(this.text != "Profile") {
-			event.preventDefault();
-    		$(".overlay").fadeToggle("fast");
-    	}
+
+		event.preventDefault();
+    	$(".overlay").fadeToggle("fast");
+    	
   	});
 
 //Clinking the close button on the pop-up
