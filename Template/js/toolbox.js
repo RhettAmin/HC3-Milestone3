@@ -1,5 +1,13 @@
 $( function() {
 
+	
+   		$('#search').animate(
+			{
+				width: 'toggle',
+			}
+		).focus();
+
+/*
 	$('#btn-search').on('click', function(e) {
 
 		e.preventDefault();
@@ -10,5 +18,5 @@ $( function() {
 		).focus();
 
 	});
-
+*/
 });
