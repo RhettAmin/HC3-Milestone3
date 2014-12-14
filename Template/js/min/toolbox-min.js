@@ -1,1 +1,1 @@
-!function(){$("#btn-search").on("click",function(n){n.preventDefault(),$("#search").animate({width:"toggle"}).focus()})}();
+$(function(){$("#btn-search").on("click",function(n){n.preventDefault(),$("#search").animate({width:"toggle"}).focus()})});

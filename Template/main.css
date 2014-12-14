@@ -216,13 +216,13 @@ ul.nav-menu li a:hover {
 /*========================================
 ============= Walleee Search =============
 ==========================================*/
-#search {
+#searchContainer {
 	background: #ac83ef;
 	overflow: hidden;
 	border-bottom: 6px solid #cab0f5;
 }
 
-#search .inner {
+#searchContainer .inner {
 	min-height: 400px;
 	padding-top: 52px;
 	padding-bottom: 52px;
