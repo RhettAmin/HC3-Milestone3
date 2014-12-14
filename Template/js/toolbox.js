@@ -5,6 +5,7 @@
 		e.preventDefault();
 		$('#search').animate({width: 'toggle'}).focus();
 
+
 	});
 
 } () );
