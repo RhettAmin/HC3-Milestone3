@@ -223,7 +223,7 @@ ul.nav-menu li a:hover {
 }
 
 #searchContainer .inner {
-	min-height: 400px;
+	min-height: 100px;
 	padding-top: 52px;
 	padding-bottom: 52px;
 }
