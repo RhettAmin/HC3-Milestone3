@@ -100,6 +100,10 @@ p {
 	float: center;
 	}
 
+.center-text {
+	text-align: center;
+}
+
 .both {
 	clear: both;
 	display: block;

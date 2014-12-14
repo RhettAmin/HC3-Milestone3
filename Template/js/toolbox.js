@@ -1,4 +1,4 @@
-( function() {
+$( function() {
 
 	$('#btn-search').on('click', function(e) {
 
@@ -8,4 +8,4 @@
 
 	});
 
-} () );
+});
