@@ -1,5 +1,14 @@
 $( function() {
-
+        var data = [
+            "Landscapes",
+            "Monsters",
+            "Movies",
+            "Games",
+            "Models",
+            "Graphic Design",
+            "Cartoon",
+            "Cars",
+        ];
 
    		$('#search').animate(
 			{
@@ -10,9 +19,11 @@ $( function() {
 		$('#btn-search').on('click', function() {
 
 			window.alert(document.getElementById('search').value);
+            var val = document.getElementById('search').value;
 
-		});
+            source:data;
 
+		})
 /*
 	$('#btn-search').on('click', function(e) {
 
@@ -28,16 +39,7 @@ $( function() {
 });
 
 
-var data = [
-	"Landscapes",
-	"Monsters",
-	"Movies",
-	"Games",
-	"Models",
-	"Graphic Design",
-	"Cartoon",
-	"Cars",
-];
+
  
  
 $(function() { 
