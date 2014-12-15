@@ -97,6 +97,8 @@ ul {
 	padding: 0;
 }
 
+
+
 /* ---------- CLASSES ---------- */
 
 .clearfix {
@@ -156,6 +158,14 @@ ul {
 .toolbar input[id="search"]:focus,
 .toolbar button:hover {
 	background: #2a80b9;
+}
+
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    /* add padding to account for vertical scrollbar */
 }
 
 .toolbar input[id="search"] {

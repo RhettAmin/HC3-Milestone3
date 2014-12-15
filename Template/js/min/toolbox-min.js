@@ -1,1 +1,1 @@
-$(function(){$("#search").animate({width:"toggle"}).focus()});
+$(function(){$("#search").animate({width:"toggle"}).focus(),$("#btn-search").on("click",function(){window.alert(document.getElementById("search").value)})});var data=["Landscapes","Monsters","Movies","Games","Models","Graphic Design","Cartoon","Cars"];$(function(){$("#search").autocomplete({source:data})});
